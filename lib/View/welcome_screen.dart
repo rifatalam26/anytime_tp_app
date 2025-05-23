@@ -21,7 +21,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const SizedBox(
-              height: 100,
+              height: 70,
             ),
             Center(
               child: Container(
@@ -44,15 +44,59 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             const SizedBox(
-              height: 390,
+              height: 410,
             ),
             Container(
-              height: 266,
+              height: 276,
               decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(50),
                       topRight: Radius.circular(50))),
+              child: Center(
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Container(
+                      height: 7,
+                      width: 100,
+                      decoration: const BoxDecoration(color: Color(0xff1C1F5E)),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const Text(
+                      "Simplify Your Logistics",
+                      style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff1C1F5E)),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    const Text(
+                      "Real-time GPS, seamless management, instant ",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    const Text(
+                      "notifications at your fingertips.",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    const CircleAvatar(
+                      radius: 25,
+                      backgroundImage: AssetImage(
+                        "assets/image/Button Icon FAB.png",
+                      ),
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
