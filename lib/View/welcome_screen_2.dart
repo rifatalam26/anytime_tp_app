@@ -1,22 +1,22 @@
-import 'package:anytime_tp_app/View/welcome_screen_2.dart';
+import 'package:anytime_tp_app/View/Signup_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
-class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({super.key});
+class WelcomeScreen2 extends StatefulWidget {
+  const WelcomeScreen2({super.key});
 
   @override
-  State<WelcomeScreen> createState() => _WelcomeScreenState();
+  State<WelcomeScreen2> createState() => _WelcomeScreen2State();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen> {
+class _WelcomeScreen2State extends State<WelcomeScreen2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
             image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage("assets/image/Welcome Screen.png"))),
+              fit: BoxFit.cover,
+                image: AssetImage("assets/image/Welcome Screen2.png"))),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -38,7 +38,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     borderRadius: BorderRadius.circular(25)),
                 child: const Center(
                   child: Text(
-                    "Step One",
+                    "Step Two",
                     style: TextStyle(
                         fontSize: 17,
                         fontWeight: FontWeight.bold,
@@ -63,31 +63,19 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     const SizedBox(
                       height: 30,
                     ),
-                    Stack(
-                      children: [
-                        Container(
-                          height: 7,
-                          width: 180,
-                          decoration: const BoxDecoration(
-                              color: Color(0xffD0D1F1),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(40))),
-                        ),
-                        Container(
-                          height: 7,
-                          width: 120,
-                          decoration: const BoxDecoration(
-                              color: Color(0xff1C1F5E),
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(40))),
-                        ),
-                      ],
+                    Container(
+                      height: 7,
+                      width: 180,
+                      decoration: const BoxDecoration(
+                          color: Color(0xff1C1F5E),
+                          borderRadius:
+                          BorderRadius.all(Radius.circular(40))),
                     ),
                     const SizedBox(
                       height: 30,
                     ),
                     const Text(
-                      "Simplify Your Logistics",
+                      "Empower Your Fleet",
                       style: TextStyle(
                           fontSize: 28,
                           fontWeight: FontWeight.bold,
@@ -97,11 +85,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       height: 20,
                     ),
                     const Text(
-                      "Real-time GPS, seamless management, instant ",
+                      "Track routes, manage jobs, and stay connected ",
                       style: TextStyle(fontSize: 15),
                     ),
                     const Text(
-                      "notifications at your fingertips.",
+                      "effortlessly",
                       style: TextStyle(fontSize: 15),
                     ),
                     const SizedBox(
@@ -112,7 +100,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const WelcomeScreen2()));
+                                builder: (context) => const LoginScreen()));
                       },
                       child: const CircleAvatar(
                         radius: 25,
