@@ -8,6 +8,8 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool _secureText = true;
+  bool check = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,8 +107,17 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                         TextFormField(
+                          obscureText: _secureText,
                           decoration: InputDecoration(
-
+                              suffixIcon: IconButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      _secureText = !_secureText;
+                                    });
+                                  },
+                                  icon: Icon(_secureText
+                                      ? Icons.visibility_off
+                                      : Icons.visibility)),
                               focusedBorder: OutlineInputBorder(
                                   borderSide: const BorderSide(
                                       color: Color(0xffB6B6B6), width: 1),
@@ -118,8 +129,71 @@ class _LoginScreenState extends State<LoginScreen> {
                               hintText: "Password",
                               hintStyle: const TextStyle(
                                   fontSize: 16, color: Color(0xff8D8D8D))),
-
                         ),
+                        const SizedBox(
+                          height: 5,
+                        ),
+                        Row(
+                          children: [
+                            Checkbox(
+                                checkColor: Colors.black,
+                                activeColor: Colors.blueGrey,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(5)),
+                                value: check,
+                                onChanged: (c) {
+                                  check = c!;
+                                  setState(() {});
+                                }),
+                            const Text(
+                              "Remember me",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                            const SizedBox(
+                              width: 30,
+                            ),
+                            const Text(
+                              "Forgot password?",
+                              style: TextStyle(
+                                  fontSize: 16, color: Color(0xff1C1F5E)),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(
+                          height: 40,
+                        ),
+                        Container(
+                          height: 55,
+                          width: 350,
+                          decoration: BoxDecoration(
+                              color: const Color(0xff1C1F5E),
+                              borderRadius: BorderRadius.circular(30)),
+                          child: const Center(
+                            child: Text(
+                              "Log In",
+                              style: TextStyle(
+                                  fontSize: 19,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white),
+                            ),
+                          ),
+                        ),
+                        const Row(
+                          children: [
+                            Text(
+                              "Didn’t have an account?",
+                              style: TextStyle(
+                                  fontSize: 17, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "Sign Up",
+                              style: TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xff1C1F5E)),
+                            )
+                          ],
+                        )
                       ],
                     ),
                   ),

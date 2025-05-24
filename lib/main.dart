@@ -1,6 +1,5 @@
 
-import 'package:anytime_tp_app/View/splash_screen.dart';
-import 'package:anytime_tp_app/View/welcome_screen.dart';
+import 'package:anytime_tp_app/View/Signup_screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner:false,
-      home:WelcomeScreen(),
+      home:LoginScreen(),
     );
   }
 }
