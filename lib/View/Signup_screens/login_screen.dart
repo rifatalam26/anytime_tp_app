@@ -36,9 +36,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     padding: const EdgeInsets.all(20),
                     child: Column(
                       children: [
-                        const SizedBox(
-                          height: 10,
-                        ),
                         Container(
                           height: 7,
                           width: 180,
@@ -96,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   fontSize: 16, color: Color(0xff8D8D8D))),
                         ),
                         const SizedBox(
-                          height: 30,
+                          height: 20,
                         ),
                         const Row(
                           children: [
@@ -178,12 +175,19 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
+                        const SizedBox(
+                          height: 20,
+                        ),
                         const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Didn’t have an account?",
+                              "Did’t have an account?",
                               style: TextStyle(
                                   fontSize: 17, fontWeight: FontWeight.bold),
+                            ),
+                            SizedBox(
+                              width: 15,
                             ),
                             Text(
                               "Sign Up",
