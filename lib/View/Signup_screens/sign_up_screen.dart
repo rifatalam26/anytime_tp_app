@@ -21,7 +21,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           child: Column(
             children: [
               const SizedBox(
-                height: 230,
+                height: 200,
               ),
               Container(
                 height: 576,
@@ -44,7 +44,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               BorderRadius.all(Radius.circular(40))),
                         ),
                         const SizedBox(
-                          height: 30,
+                          height: 20,
                         ),
                         const Row(
                           children: [
@@ -56,7 +56,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           ],
                         ),
                         const SizedBox(
-                          height: 15,
+                          height: 5,
                         ),
                         const Row(
                           children: [
@@ -67,7 +67,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           ],
                         ),
                         const SizedBox(
-                          height: 30,
+                          height: 15,
                         ),
                         const Row(
                           children: [
@@ -92,7 +92,57 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   fontSize: 16, color: Color(0xff8D8D8D))),
                         ),
                         const SizedBox(
-                          height: 20,
+                          height: 10,
+                        ),
+                        const Row(
+                          children: [
+                            Text(
+                              "Name",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                              focusedBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(
+                                      color: Color(0xffB6B6B6), width: 1),
+                                  borderRadius: BorderRadius.circular(15)),
+                              enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(
+                                      color: Color(0xffB6B6B6), width: 1),
+                                  borderRadius: BorderRadius.circular(15)),
+                              hintText: "enter your Name",
+                              hintStyle: const TextStyle(
+                                  fontSize: 16, color: Color(0xff8D8D8D))),
+                        ),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        const Row(
+                          children: [
+                            Text(
+                              "Name",
+                              style: TextStyle(fontSize: 16),
+                            ),
+                          ],
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                              focusedBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(
+                                      color: Color(0xffB6B6B6), width: 1),
+                                  borderRadius: BorderRadius.circular(15)),
+                              enabledBorder: OutlineInputBorder(
+                                  borderSide: const BorderSide(
+                                      color: Color(0xffB6B6B6), width: 1),
+                                  borderRadius: BorderRadius.circular(15)),
+                              hintText: "enter your Name",
+                              hintStyle: const TextStyle(
+                                  fontSize: 16, color: Color(0xff8D8D8D))),
+                        ),
+                        const SizedBox(
+                          height: 10,
                         ),
                         const Row(
                           children: [
@@ -127,10 +177,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   fontSize: 16, color: Color(0xff8D8D8D))),
                         ),
                         const SizedBox(
-                          height: 5,
-                        ),
-                        const SizedBox(
-                          height: 40,
+                          height: 29,
                         ),
                         Container(
                           height: 55,
@@ -148,29 +195,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             ),
                           ),
                         ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        const Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              "Did’t have an account?",
-                              style: TextStyle(
-                                  fontSize: 17, fontWeight: FontWeight.bold),
-                            ),
-                            SizedBox(
-                              width: 15,
-                            ),
-                            Text(
-                              "Sign Up",
-                              style: TextStyle(
-                                  fontSize: 17,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xff1C1F5E)),
-                            )
-                          ],
-                        )
                       ],
                     ),
                   ),
