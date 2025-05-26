@@ -1,6 +1,7 @@
 
-import 'package:anytime_tp_app/View/Signup_screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
+
+import 'View/Signup_screens/forget_password_screen.dart';
 
 void main(){
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner:false,
-      home:SignUpScreen(),
+      home:ForgetPasswordScreen(),
     );
   }
 }
