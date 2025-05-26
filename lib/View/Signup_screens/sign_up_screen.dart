@@ -17,7 +17,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage("assets/image/Sign up phone.png"))),
+                  image: AssetImage("assets/image/Sign up phone (1).png"))),
           child: Column(
             children: [
               const SizedBox(
@@ -97,7 +97,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         const Row(
                           children: [
                             Text(
-                              "Name",
+                              "Email",
                               style: TextStyle(fontSize: 16),
                             ),
                           ],
@@ -112,7 +112,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   borderSide: const BorderSide(
                                       color: Color(0xffB6B6B6), width: 1),
                                   borderRadius: BorderRadius.circular(15)),
-                              hintText: "enter your Name",
+                              hintText: "Email",
                               hintStyle: const TextStyle(
                                   fontSize: 16, color: Color(0xff8D8D8D))),
                         ),
@@ -122,7 +122,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         const Row(
                           children: [
                             Text(
-                              "Name",
+                              "Phone Number",
                               style: TextStyle(fontSize: 16),
                             ),
                           ],
@@ -137,7 +137,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   borderSide: const BorderSide(
                                       color: Color(0xffB6B6B6), width: 1),
                                   borderRadius: BorderRadius.circular(15)),
-                              hintText: "enter your Name",
+                              hintText: "Phone Number",
                               hintStyle: const TextStyle(
                                   fontSize: 16, color: Color(0xff8D8D8D))),
                         ),
