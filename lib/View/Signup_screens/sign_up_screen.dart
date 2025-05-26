@@ -72,7 +72,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         const Row(
                           children: [
                             Text(
-                              "Email or Phone Number",
+                              "Name",
                               style: TextStyle(fontSize: 16),
                             ),
                           ],
@@ -87,7 +87,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                   borderSide: const BorderSide(
                                       color: Color(0xffB6B6B6), width: 1),
                                   borderRadius: BorderRadius.circular(15)),
-                              hintText: "Email or Phone Number",
+                              hintText: "enter your Name",
                               hintStyle: const TextStyle(
                                   fontSize: 16, color: Color(0xff8D8D8D))),
                         ),
