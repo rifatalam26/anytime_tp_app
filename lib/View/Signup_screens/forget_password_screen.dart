@@ -56,8 +56,8 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               height: 20,
             ),
             TextFormField(
+              keyboardType: TextInputType.number,
               decoration: InputDecoration(
-
                   fillColor: Colors.white,
                   filled: true,
                   focusedBorder: OutlineInputBorder(
