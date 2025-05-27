@@ -13,10 +13,10 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-              fit: BoxFit.cover,
-                image: AssetImage("assets/image/Sign up phone (2).png"))),
+        // decoration: const BoxDecoration(
+        //     image: DecorationImage(
+        //       fit: BoxFit.cover,
+        //         image: AssetImage("assets/image/Sign up phone (2).png"))),
         child: Padding(
           padding: const EdgeInsets.all(10),
           child: Column(
@@ -62,18 +62,19 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               ),
               TextFormField(
                 decoration: InputDecoration(
-                    fillColor: const Color(0xffFDFBFB),
+                    fillColor: Colors.white,
+                    filled: true,
                     focusedBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Color(0xffB6B6B6), width: 1),
+                            color: Colors.white, width: 1),
                         borderRadius: BorderRadius.circular(15)),
                     enabledBorder: OutlineInputBorder(
                         borderSide: const BorderSide(
-                            color: Color(0xffB6B6B6), width: 1),
+                            color: Colors.white, width: 1),
                         borderRadius: BorderRadius.circular(15)),
-                    hintText: "enter your Name",
+                    hintText: "Enter Your Name",
                     hintStyle: const TextStyle(
-                        fontSize: 16, color: Color(0xff8D8D8D))),
+                        fontSize: 16, color: Color(0xffB3BAC5))),
               ),
             ],
           ),
