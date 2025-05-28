@@ -110,15 +110,6 @@ class _VerificationScreenState extends State<VerificationScreen> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 50,
-            ),
-            const Text(
-              "Don’t receive the code yet?",
-              style: TextStyle(fontSize: 16),
-            ),
-            const Text("Resend code",
-                style: TextStyle(fontSize: 16, color: Color(0xff7DBABB))),
           ],
         ),
       ),
