@@ -187,7 +187,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               borderRadius: BorderRadius.circular(30)),
                           child: const Center(
                             child: Text(
-                              "Log In",
+                              "Sign Up",
                               style: TextStyle(
                                   fontSize: 19,
                                   fontWeight: FontWeight.bold,

@@ -1,3 +1,4 @@
+import 'package:anytime_tp_app/View/Signup_screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -159,19 +160,28 @@ class _LoginScreenState extends State<LoginScreen> {
                         const SizedBox(
                           height: 40,
                         ),
-                        Container(
-                          height: 55,
-                          width: 350,
-                          decoration: BoxDecoration(
-                              color: const Color(0xff1C1F5E),
-                              borderRadius: BorderRadius.circular(30)),
-                          child: const Center(
-                            child: Text(
-                              "Log In",
-                              style: TextStyle(
-                                  fontSize: 19,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        const SignUpScreen()));
+                          },
+                          child: Container(
+                            height: 55,
+                            width: 350,
+                            decoration: BoxDecoration(
+                                color: const Color(0xff1C1F5E),
+                                borderRadius: BorderRadius.circular(30)),
+                            child: const Center(
+                              child: Text(
+                                "Log In",
+                                style: TextStyle(
+                                    fontSize: 19,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white),
+                              ),
                             ),
                           ),
                         ),

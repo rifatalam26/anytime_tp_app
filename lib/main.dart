@@ -1,9 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'View/Signup_screens/forget_password_screen.dart';
-import 'View/Signup_screens/verification_screen.dart';
-
+import 'View/Signup_screens/congratulation_screen.dart';
 void main(){
   runApp(const MyApp());
 }
@@ -14,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner:false,
-      home:VerificationScreen(),
+      home:CongratulationScreen(),
     );
   }
 }
