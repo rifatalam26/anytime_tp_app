@@ -66,13 +66,6 @@ class _VerificationScreenState extends State<VerificationScreen> {
             const SizedBox(
               height: 30,
             ),
-            const Padding(
-              padding: EdgeInsets.only(right: 260),
-              child: Text(
-                "OTP Code",
-                style: TextStyle(fontSize: 17, color: Color(0xffB0BABF)),
-              ),
-            ),
             OtpTextField(
               filled: true,
               fillColor: Colors.white,
