@@ -28,7 +28,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                   width: 8,
                 ),
                 const Text(
-                  "Enter Your Verification Code",
+                  "Verification",
                   style: TextStyle(
                       fontSize: 17,
                       fontWeight: FontWeight.bold,
@@ -39,15 +39,29 @@ class _VerificationScreenState extends State<VerificationScreen> {
             const SizedBox(
               height: 40,
             ),
-            const Padding(
-              padding: EdgeInsets.only(right: 90),
-              child: Text(
-                "Enter the OTP code here",
-                style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xff141414)),
-              ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      "Verification",
+                      style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff141414)),
+                    ),
+                    Text(
+                      "4 digit pin have been sent to your email. Enter",
+                      style: TextStyle(fontSize: 15, color: Color(0xff919EAB)),
+                    ),
+                    Text(
+                      "the code below to continue.",
+                      style: TextStyle(fontSize: 15, color: Color(0xff919EAB)),
+                    )
+                  ],
+                ),
+              ],
             ),
             const SizedBox(
               height: 30,
