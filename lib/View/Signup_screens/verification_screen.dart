@@ -1,3 +1,4 @@
+import 'package:anytime_tp_app/View/Signup_screens/congratulation_screen.dart';
 import 'package:anytime_tp_app/View/Signup_screens/forget_password_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
@@ -91,7 +92,8 @@ class _VerificationScreenState extends State<VerificationScreen> {
           ),
           InkWell(
             onTap: () {
-              // Get.to(const NewPasswordScreen());
+               Navigator.push(context,
+                   MaterialPageRoute(builder: (context)=>const CongratulationScreen()));
             },
             child: Container(
               height: 53,
