@@ -48,8 +48,8 @@ class _CongratulationScreenState extends State<CongratulationScreen> {
                 const SizedBox(height: 20),
                 InkWell(
                   onTap: () {
-                    Navigator.pop(context); // ডায়ালগ বন্ধ করবে
-                    // এখানে অন্য স্ক্রিনে যাওয়ার কোড লিখতে পারো
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>const HomeScreen()));
                   },
                   child: Container(
                     height: 53,
