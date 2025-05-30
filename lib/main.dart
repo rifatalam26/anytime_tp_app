@@ -1,4 +1,5 @@
 
+import 'package:anytime_tp_app/Home_screens/home_screen.dart';
 import 'package:anytime_tp_app/View/Signup_screens/verification_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner:false,
-      home:VerificationScreen(),
+      home:HomeScreen(),
     );
   }
 }
