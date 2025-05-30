@@ -170,7 +170,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           width: 20,
                           decoration: const BoxDecoration(
                               image: DecorationImage(
-                                  image: AssetImage("assets/image/Vector.png"))),
+                                  image:
+                                      AssetImage("assets/image/Vector.png"))),
                         ),
                         const SizedBox(
                           width: 5,
@@ -200,6 +201,91 @@ class _HomeScreenState extends State<HomeScreen> {
                                   color: Color(0xff636363)),
                             ),
                           ),
+                        )
+                      ],
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                    Row(
+                      children: [
+                        const CircleAvatar(
+                          radius: 32,
+                        ),
+                        const SizedBox(
+                          width: 10,
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              "Ahmed Mohamed",
+                              style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xff242424)),
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 32,
+                                  width: 161,
+                                  decoration: BoxDecoration(
+                                      color: Colors.green,
+                                      borderRadius: BorderRadius.circular(30)),
+                                  child: const Center(
+                                    child: Row(
+                                      children: [
+                                        SizedBox(
+                                          width: 2,
+                                        ),
+                                        Icon(
+                                          Icons.call,
+                                          color: Colors.white,
+                                          size: 22,
+                                        ),
+                                        Text(
+                                          "(569) 8965-1458",
+                                          style: TextStyle(
+                                              fontSize: 17, color: Colors.white),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 6,
+                                ),
+                                Container(
+                                  height: 32,
+                                  width: 75,
+                                  decoration: BoxDecoration(
+                                      color: Colors.green,
+                                      borderRadius: BorderRadius.circular(30)),
+                                  child: const Center(
+                                    child: Row(
+                                      children: [
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Icon(
+                                          Icons.email,
+                                          color: Colors.white,
+                                          size: 20,
+                                        ),
+                                        Text(
+                                          "Email",
+                                          style: TextStyle(
+                                              fontSize: 17, color: Colors.white),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                )
+                              ],
+                            )
+                          ],
                         )
                       ],
                     )
