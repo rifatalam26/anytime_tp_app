@@ -63,12 +63,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           )
                         ],
                       ),
-                      const Text(
-                        "24 NY,Florida,Miami",
-                        style: TextStyle(fontSize: 15, color: Colors.white),
+                      const Row(
+                        children: [
+                          Icon(Icons.location_on,color: Colors.white,size: 20,),
+                          Text(
+                            "24 NY,Florida,Miami",
+                            style: TextStyle(fontSize: 15, color: Colors.white),
+                          ),
+                        ],
                       )
                     ],
-                  )
+                  ),
                 ],
               ),
             )
