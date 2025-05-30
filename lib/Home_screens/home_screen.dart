@@ -34,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -65,7 +66,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const Row(
                         children: [
-                          Icon(Icons.location_on,color: Colors.white,size: 20,),
+                          Icon(
+                            Icons.location_on,
+                            color: Colors.white,
+                            size: 20,
+                          ),
                           Text(
                             "24 NY,Florida,Miami",
                             style: TextStyle(fontSize: 15, color: Colors.white),
@@ -74,6 +79,26 @@ class _HomeScreenState extends State<HomeScreen> {
                       )
                     ],
                   ),
+                  const SizedBox(
+                    width: 40,
+                  ),
+                  const Stack(
+                    children: [
+                      Icon(
+                        Icons.notifications,
+                        size: 50,
+                        color: Colors.white,
+                      ),
+                      Positioned(
+                        left: 27,
+                        top: 5,
+                        child: CircleAvatar(
+                          radius: 10,
+                          backgroundColor: Colors.green,
+                        ),
+                      )
+                    ],
+                  )
                 ],
               ),
             )
