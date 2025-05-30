@@ -150,6 +150,62 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                 ],
               ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 500,
+              width: 340,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(8)),
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          height: 20,
+                          width: 20,
+                          decoration: const BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage("assets/image/Vector.png"))),
+                        ),
+                        const SizedBox(
+                          width: 5,
+                        ),
+                        const Text(
+                          "Your Route",
+                          style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xff1C1F5E)),
+                        ),
+                        const SizedBox(
+                          width: 144,
+                        ),
+                        Container(
+                          height: 30,
+                          width: 60,
+                          decoration: BoxDecoration(
+                              color: const Color(0xffC4C4C4),
+                              borderRadius: BorderRadius.circular(25)),
+                          child: const Center(
+                            child: Text(
+                              "New",
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                  color: Color(0xff636363)),
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             )
           ],
         ),
