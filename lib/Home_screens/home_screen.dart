@@ -59,8 +59,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               child: const Center(
                                   child: Text(
                                 "Online",
-                                style:
-                                    TextStyle(fontSize: 12, color: Colors.white),
+                                style: TextStyle(
+                                    fontSize: 12, color: Colors.white),
                               )),
                             )
                           ],
@@ -74,7 +74,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Text(
                               "24 NY,Florida,Miami",
-                              style: TextStyle(fontSize: 15, color: Colors.white),
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.white),
                             ),
                           ],
                         )
@@ -159,7 +160,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: 500,
                 width: 340,
                 decoration: BoxDecoration(
-                    color: Colors.white, borderRadius: BorderRadius.circular(8)),
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)),
                 child: Padding(
                   padding: const EdgeInsets.all(12),
                   child: Column(
@@ -234,7 +236,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     width: 161,
                                     decoration: BoxDecoration(
                                         color: Colors.green,
-                                        borderRadius: BorderRadius.circular(30)),
+                                        borderRadius:
+                                            BorderRadius.circular(30)),
                                     child: const Center(
                                       child: Row(
                                         children: [
@@ -264,7 +267,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     width: 75,
                                     decoration: BoxDecoration(
                                         color: Colors.green,
-                                        borderRadius: BorderRadius.circular(30)),
+                                        borderRadius:
+                                            BorderRadius.circular(30)),
                                     child: const Center(
                                       child: Row(
                                         children: [
@@ -400,8 +404,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                           const Text(
                             "example@gmail.com",
-                            style:
-                                TextStyle(fontSize: 15, color: Color(0xff575757)),
+                            style: TextStyle(
+                                fontSize: 15, color: Color(0xff575757)),
                           )
                         ],
                       ),
@@ -422,11 +426,39 @@ class _HomeScreenState extends State<HomeScreen> {
                             width: 20,
                           ),
                           const Text(
-                            "example@gmail.com",
-                            style:
-                            TextStyle(fontSize: 15, color: Color(0xff575757)),
+                            "01/12/2025",
+                            style: TextStyle(
+                                fontSize: 15, color: Color(0xff575757)),
                           )
                         ],
+                      ),
+                      const SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        height: 55,
+                        width: 330,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(30),
+                            border: const Border(
+                              top: BorderSide(width: 1, color: Colors.black),
+                              bottom: BorderSide(width: 1, color: Colors.black),
+                              left: BorderSide(width: 1, color: Colors.black),
+                              right: BorderSide(width: 1, color: Colors.black),
+                            )),
+                        child: const Center(
+                          child: Text(
+                            "Decline",
+                            style: TextStyle(
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold,
+                                color: Color(0xff1C1F5E)),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
                       ),
                     ],
                   ),
