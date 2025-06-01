@@ -8,6 +8,14 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  int _selectedIndex = 0;
+
+  void _onNavTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+    // You can navigate or switch widgets here
+  }
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -822,6 +830,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
+
       ),
     );
   }
