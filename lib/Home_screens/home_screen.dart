@@ -103,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           left: 27,
                           top: 5,
                           child: CircleAvatar(
-                            radius: 10,
+                            radius: 8,
                             backgroundColor: Colors.green,
                           ),
                         )
@@ -831,7 +831,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
-            items: [
+            items: const [
               BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
               BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
               BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home")
