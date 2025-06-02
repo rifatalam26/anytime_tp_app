@@ -497,7 +497,6 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(
                 height: 15,
               ),
-
               Container(
                 height: 490,
                 width: 340,
@@ -831,7 +830,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-
+        bottomNavigationBar: BottomNavigationBar(
+            items: [
+              BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
+              BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home")
+            ]),
       ),
     );
   }
