@@ -16,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
     // You can navigate or switch widgets here
   }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -515,7 +516,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             decoration: const BoxDecoration(
                                 image: DecorationImage(
                                     image:
-                                    AssetImage("assets/image/Vector.png"))),
+                                        AssetImage("assets/image/Vector.png"))),
                           ),
                           const SizedBox(
                             width: 5,
@@ -578,7 +579,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     decoration: BoxDecoration(
                                         color: Colors.green,
                                         borderRadius:
-                                        BorderRadius.circular(30)),
+                                            BorderRadius.circular(30)),
                                     child: const Center(
                                       child: Row(
                                         children: [
@@ -609,7 +610,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     decoration: BoxDecoration(
                                         color: Colors.green,
                                         borderRadius:
-                                        BorderRadius.circular(30)),
+                                            BorderRadius.circular(30)),
                                     child: const Center(
                                       child: Row(
                                         children: [
@@ -830,12 +831,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        bottomNavigationBar: BottomNavigationBar(
+        bottomNavigationBar: BottomNavigationBar(backgroundColor: const Color(0xff1C1F5E),
             items: const [
-              BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-              BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-              BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home")
-            ]),
+          BottomNavigationBarItem(icon: Icon(Icons.home,color: Colors.white,), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.contact_phone,color: Colors.white,), label: "Home"),
+          BottomNavigationBarItem(icon: Icon(Icons.person,color: Colors.white,), label: "Home")
+        ]),
       ),
     );
   }
