@@ -837,16 +837,16 @@ class _HomeScreenState extends State<HomeScreen> {
               label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.contact_phone,
                 color: Colors.white,
               ),
-              label: "Home"),
+              label: "Contact"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Icons.person,
                 color: Colors.white,
               ),
-              label: "Home"),
+              label: "Profile"),
         ]),
       ),
     );
