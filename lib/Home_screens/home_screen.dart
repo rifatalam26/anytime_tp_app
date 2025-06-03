@@ -8,7 +8,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  int _index = 0;
+  int index = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -315,27 +315,76 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 20,
-                                    width: 20,
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/image/Group.png"))),
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  const Text(
-                                    "Pickup",
-                                    style: TextStyle(
-                                        fontSize: 19,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xff1C1F5E)),
-                                  )
-                                ],
+                              InkWell(
+                                onTap: (){
+                                  showDialog(
+                                      context: context,
+                                      builder: (context){
+                                        return AlertDialog(
+                                         title: Column(
+                                           children: [
+                                             Row(
+                                               children: [
+                                                 Container(
+                                                   height: 20,
+                                                   width: 20,
+                                                   decoration: const BoxDecoration(
+                                                       image: DecorationImage(
+                                                           image: AssetImage(
+                                                               "assets/image/Group.png"))),
+                                                 ),
+                                                 const SizedBox(
+                                                   width: 5,
+                                                 ),
+                                                 const Text(
+                                                   "Pickup location",
+                                                   style: TextStyle(
+                                                       fontSize: 19,
+                                                       fontWeight: FontWeight.bold,
+                                                       color: Color(0xff1C1F5E)),
+                                                 )
+                                               ],
+                                             ),
+                                             Container(
+                                               height: 50,
+                                               width: 325,
+                                               decoration: BoxDecoration(
+                                                   color: const Color(0xffF0F0F0),
+                                                   borderRadius: BorderRadius.circular(8),
+                                                   border: Border.all(color: const Color(0xffC4C4C4))),
+                                               child: Column(
+                                                 children: [
+
+                                                 ],
+                                               ),
+                                             ),
+                                           ],
+                                         ),
+                                        );
+                                      });
+                                },
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      height: 20,
+                                      width: 20,
+                                      decoration: const BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage(
+                                                  "assets/image/Group.png"))),
+                                    ),
+                                    const SizedBox(
+                                      width: 5,
+                                    ),
+                                    const Text(
+                                      "Pickup",
+                                      style: TextStyle(
+                                          fontSize: 19,
+                                          fontWeight: FontWeight.bold,
+                                          color: Color(0xff1C1F5E)),
+                                    )
+                                  ],
+                                ),
                               ),
                               const Row(
                                 children: [
@@ -827,27 +876,32 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         bottomNavigationBar: BottomNavigationBar(
+          onTap: (value) {
+            setState(() {
+              index=value;
+            });
+          },
             backgroundColor: const Color(0xff1C1F5E),
             items: const [
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                color: Colors.white,
-              ),
-              label: "Home"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.contact_phone,
-                color: Colors.white,
-              ),
-              label: "Contact"),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person,
-                color: Colors.white,
-              ),
-              label: "Profile"),
-        ]),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                  label: "Home"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.contact_phone,
+                    color: Colors.white,
+                  ),
+                  label: "Contact"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                  label: "Profile"),
+            ]),
       ),
     );
   }
