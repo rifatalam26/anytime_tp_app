@@ -827,7 +827,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         bottomNavigationBar: FloatingNavbar(
-          backgroundColor: Color(0xff1C1F5E),
+          backgroundColor: const Color(0xff1C1F5E),
           onTap: (int val) => setState(() => _index = val),
           currentIndex: _index,
           items: [
