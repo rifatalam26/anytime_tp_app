@@ -828,7 +828,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         bottomNavigationBar: BottomNavigationBar(
             backgroundColor: const Color(0xff1C1F5E),
-            items: [
+            items: const [
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
