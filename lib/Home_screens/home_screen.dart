@@ -362,7 +362,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 child: const Column(
                                                   children: [
                                                     Padding(
-                                                      padding: EdgeInsets.all(10),
+                                                      padding:
+                                                          EdgeInsets.all(10),
                                                       child: Text(
                                                         "8134 Franz Parkways, Suite 805, Lao People,Florida, Miami",
                                                         style: TextStyle(
