@@ -364,6 +364,9 @@ class _HomeScreenState extends State<HomeScreen> {
                                           ],
                                         ),
                                       ),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
                                       Row(
                                         children: [
                                           Container(
@@ -392,7 +395,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                         height: 5,
                                       ),
                                       Container(
-                                        height: 85,
+                                        height: 45,
                                         width: 325,
                                         decoration: BoxDecoration(
                                             color:
@@ -409,7 +412,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                               padding:
                                               EdgeInsets.all(10),
                                               child: Text(
-                                                "8134 Franz Parkways, Suite 805, Lao People,Florida, Miami",
+                                                "Cap Girard, USA",
                                                 style: TextStyle(
                                                     fontSize: 16),
                                               ),
