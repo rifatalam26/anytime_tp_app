@@ -335,6 +335,62 @@ class _HomeScreenState extends State<HomeScreen> {
                                           )
                                         ],
                                       ),
+                                      const SizedBox(
+                                        height: 5,
+                                      ),
+                                      Container(
+                                        height: 85,
+                                        width: 325,
+                                        decoration: BoxDecoration(
+                                            color:
+                                            const Color(0xffF0F0F0),
+                                            borderRadius:
+                                            BorderRadius.circular(
+                                                8),
+                                            border: Border.all(
+                                                color: const Color(
+                                                    0xffC4C4C4))),
+                                        child: const Column(
+                                          children: [
+                                            Padding(
+                                              padding:
+                                              EdgeInsets.all(10),
+                                              child: Text(
+                                                "8134 Franz Parkways, Suite 805, Lao People,Florida, Miami",
+                                                style: TextStyle(
+                                                    fontSize: 16),
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                      Row(
+                                        children: [
+                                          Container(
+                                            height: 20,
+                                            width: 20,
+                                            decoration: const BoxDecoration(
+                                                image: DecorationImage(
+                                                    image: AssetImage(
+                                                        "assets/image/Group.png"))),
+                                          ),
+                                          const SizedBox(
+                                            width: 5,
+                                          ),
+                                          const Text(
+                                            "Pickup location",
+                                            style: TextStyle(
+                                                fontSize: 19,
+                                                fontWeight:
+                                                FontWeight.bold,
+                                                color:
+                                                Color(0xff1C1F5E)),
+                                          )
+                                        ],
+                                      ),
+                                      const SizedBox(
+                                        height: 5,
+                                      ),
                                       Container(
                                         height: 85,
                                         width: 325,
