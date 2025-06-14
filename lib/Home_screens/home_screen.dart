@@ -328,10 +328,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                             "Pickup location",
                                             style: TextStyle(
                                                 fontSize: 19,
-                                                fontWeight:
-                                                FontWeight.bold,
-                                                color:
-                                                Color(0xff1C1F5E)),
+                                                fontWeight: FontWeight.bold,
+                                                color: Color(0xff1C1F5E)),
                                           )
                                         ],
                                       ),
@@ -342,23 +340,19 @@ class _HomeScreenState extends State<HomeScreen> {
                                         height: 85,
                                         width: 325,
                                         decoration: BoxDecoration(
-                                            color:
-                                            const Color(0xffF0F0F0),
+                                            color: const Color(0xffF0F0F0),
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                8),
+                                                BorderRadius.circular(8),
                                             border: Border.all(
-                                                color: const Color(
-                                                    0xffC4C4C4))),
+                                                color:
+                                                    const Color(0xffC4C4C4))),
                                         child: const Column(
                                           children: [
                                             Padding(
-                                              padding:
-                                              EdgeInsets.all(10),
+                                              padding: EdgeInsets.all(10),
                                               child: Text(
                                                 "8134 Franz Parkways, Suite 805, Lao People,Florida, Miami",
-                                                style: TextStyle(
-                                                    fontSize: 16),
+                                                style: TextStyle(fontSize: 16),
                                               ),
                                             )
                                           ],
@@ -375,19 +369,17 @@ class _HomeScreenState extends State<HomeScreen> {
                                             decoration: const BoxDecoration(
                                                 image: DecorationImage(
                                                     image: AssetImage(
-                                                        "assets/image/Group.png"))),
+                                                        "assets/image/Group (1).png"))),
                                           ),
                                           const SizedBox(
                                             width: 5,
                                           ),
                                           const Text(
-                                            "Pickup location",
+                                            "Drop location",
                                             style: TextStyle(
                                                 fontSize: 19,
-                                                fontWeight:
-                                                FontWeight.bold,
-                                                color:
-                                                Color(0xff1C1F5E)),
+                                                fontWeight: FontWeight.bold,
+                                                color: Color(0xff1C1F5E)),
                                           )
                                         ],
                                       ),
@@ -398,23 +390,24 @@ class _HomeScreenState extends State<HomeScreen> {
                                         height: 45,
                                         width: 325,
                                         decoration: BoxDecoration(
-                                            color:
-                                            const Color(0xffF0F0F0),
+                                            color: const Color(0xffF0F0F0),
                                             borderRadius:
-                                            BorderRadius.circular(
-                                                8),
+                                                BorderRadius.circular(8),
                                             border: Border.all(
-                                                color: const Color(
-                                                    0xffC4C4C4))),
+                                                color:
+                                                    const Color(0xffC4C4C4))),
                                         child: const Column(
                                           children: [
                                             Padding(
-                                              padding:
-                                              EdgeInsets.all(10),
-                                              child: Text(
-                                                "Cap Girard, USA",
-                                                style: TextStyle(
-                                                    fontSize: 16),
+                                              padding: EdgeInsets.all(10),
+                                              child: Row(
+                                                children: [
+                                                  Text(
+                                                    "Cap Girard, USA",
+                                                    style:
+                                                        TextStyle(fontSize: 16),
+                                                  ),
+                                                ],
                                               ),
                                             )
                                           ],
@@ -431,7 +424,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           decoration: BoxDecoration(
                               color: const Color(0xffF0F0F0),
                               borderRadius: BorderRadius.circular(8),
-                              border: Border.all(color: const Color(0xffC4C4C4))),
+                              border:
+                                  Border.all(color: const Color(0xffC4C4C4))),
                           child: Padding(
                             padding: const EdgeInsets.all(10),
                             child: Column(
@@ -467,7 +461,8 @@ class _HomeScreenState extends State<HomeScreen> {
                                     Text(
                                       "8134 Franz Suite 805, Lao Peopl...",
                                       style: TextStyle(
-                                          fontSize: 15, color: Color(0xff3D3D3D)),
+                                          fontSize: 15,
+                                          color: Color(0xff3D3D3D)),
                                     ),
                                   ],
                                 ),
@@ -504,11 +499,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                     Text(
                                       "Cape Girard, USA",
                                       style: TextStyle(
-                                          fontSize: 15, color: Color(0xff3D3D3D)),
+                                          fontSize: 15,
+                                          color: Color(0xff3D3D3D)),
                                     ),
                                   ],
                                 ),
-
                               ],
                             ),
                           ),
