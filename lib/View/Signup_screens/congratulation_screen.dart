@@ -1,4 +1,4 @@
-import 'package:anytime_tp_app/Home_screens/home_screen.dart';
+import 'package:anytime_tp_app/View/Home_screens/home_screen.dart';
 import 'package:anytime_tp_app/View/Signup_screens/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
