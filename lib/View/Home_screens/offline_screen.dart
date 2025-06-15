@@ -8,6 +8,7 @@ class OfflineScreen extends StatefulWidget {
 }
 
 class _OfflineScreenState extends State<OfflineScreen> {
+  int index = 2;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -146,9 +147,36 @@ class _OfflineScreenState extends State<OfflineScreen> {
               decoration: const BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage("assets/image/offline.png"))),
-            )
+            ),
           ],
         ),
+        bottomNavigationBar: BottomNavigationBar(
+            onTap: (value) {
+              setState(() {
+                index = value;
+              });
+            },
+            backgroundColor: const Color(0xff1C1F5E),
+            items: const [
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                  label: "Home"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.contact_phone,
+                    color: Colors.white,
+                  ),
+                  label: "Contact"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                  label: "Profile"),
+            ]),
       ),
     );
   }
