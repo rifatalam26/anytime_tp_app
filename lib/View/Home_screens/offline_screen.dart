@@ -57,10 +57,10 @@ class _OfflineScreenState extends State<OfflineScreen> {
                             ),
                             child: const Center(
                                 child: Text(
-                                  "Online",
-                                  style: TextStyle(
-                                      fontSize: 12, color: Colors.white),
-                                )),
+                              "Online",
+                              style:
+                                  TextStyle(fontSize: 12, color: Colors.white),
+                            )),
                           )
                         ],
                       ),
@@ -73,8 +73,7 @@ class _OfflineScreenState extends State<OfflineScreen> {
                           ),
                           Text(
                             "24 NY,Florida,Miami",
-                            style:
-                            TextStyle(fontSize: 15, color: Colors.white),
+                            style: TextStyle(fontSize: 15, color: Colors.white),
                           ),
                         ],
                       )
@@ -103,7 +102,7 @@ class _OfflineScreenState extends State<OfflineScreen> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -121,34 +120,34 @@ class _OfflineScreenState extends State<OfflineScreen> {
               child: Row(
                 children: [
                   const SizedBox(
-                    width: 46,
-                  ),
-                  const Text(
-                    "Check out",
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xff1C1F5E)),
-                  ),
-                  const SizedBox(
-                    width: 46,
+                    width: 3,
                   ),
                   Container(
                     height: 48,
                     width: 150,
                     decoration: BoxDecoration(
-                        color: Colors.green,
+                        color: const Color(0xffD34444),
                         borderRadius: BorderRadius.circular(28)),
                     child: const Center(
                       child: Text(
-                        "Check in",
+                        "Checkout",
                         style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                             color: Colors.white),
                       ),
                     ),
-                  )
+                  ),
+                  const SizedBox(
+                    width: 46,
+                  ),
+                  const Text(
+                    "Check in",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff1C1F5E)),
+                  ),
                 ],
               ),
             ),
