@@ -103,6 +103,55 @@ class _OfflineScreenState extends State<OfflineScreen> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 55,
+              width: 330,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30),
+                  border: const Border(
+                    top: BorderSide(width: 1, color: Colors.black),
+                    bottom: BorderSide(width: 1, color: Colors.black),
+                    left: BorderSide(width: 1, color: Colors.black),
+                    right: BorderSide(width: 1, color: Colors.black),
+                  )),
+              child: Row(
+                children: [
+                  const SizedBox(
+                    width: 46,
+                  ),
+                  const Text(
+                    "Check out",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff1C1F5E)),
+                  ),
+                  const SizedBox(
+                    width: 46,
+                  ),
+                  Container(
+                    height: 48,
+                    width: 150,
+                    decoration: BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: BorderRadius.circular(28)),
+                    child: const Center(
+                      child: Text(
+                        "Check in",
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
