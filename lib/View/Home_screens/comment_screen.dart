@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class OfflineScreen extends StatefulWidget {
-  const OfflineScreen({super.key});
+class CommentScreen extends StatefulWidget {
+  const CommentScreen({super.key});
 
   @override
-  State<OfflineScreen> createState() => _OfflineScreenState();
+  State<CommentScreen> createState() => _CommentScreenState();
 }
 
-class _OfflineScreenState extends State<OfflineScreen> {
-  int index = 2;
+class _CommentScreenState extends State<CommentScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -94,91 +93,66 @@ class _OfflineScreenState extends State<OfflineScreen> {
             const SizedBox(
               height: 20,
             ),
-            Container(
-              height: 55,
-              width: 330,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(30),
-                  border: const Border(
-                    top: BorderSide(width: 1, color: Colors.black),
-                    bottom: BorderSide(width: 1, color: Colors.black),
-                    left: BorderSide(width: 1, color: Colors.black),
-                    right: BorderSide(width: 1, color: Colors.black),
-                  )),
-              child: Row(
-                children: [
-                  const SizedBox(
-                    width: 3,
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(
+                  width: 23,
+                ),
+                const CircleAvatar(
+                  radius: 25,
+                  backgroundImage:
+                      AssetImage("assets/image/profile picture.webp"),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Container(
+                  height: 100,
+                  width: 250,
+                  decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(30),
+                          bottomRight: Radius.circular(30))),
+                  child: const Padding(
+                    padding: EdgeInsets.all(10),
+                    child: Center(
+                        child: Text(
+                      "Interesting. What sets your project apart?",
+                      style: TextStyle(fontSize: 17, color: Color(0xff1C1F5E)),
+                    )),
                   ),
-                  Container(
-                    height: 48,
-                    width: 150,
-                    decoration: BoxDecoration(
-                        color: const Color(0xffD34444),
-                        borderRadius: BorderRadius.circular(28)),
-                    child: const Center(
-                      child: Text(
-                        "Checkout",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 46,
-                  ),
-                  const Text(
-                    "Check in",
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xff1C1F5E)),
-                  ),
-                ],
-              ),
+                )
+              ],
             ),
             const SizedBox(
-              height: 200,
+              height: 20,
             ),
-            Container(
-              height: 150,
-              width: 150,
-              decoration: const BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/image/offline.png"))),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 95,
+                ),
+                Text(
+                  "12.02.2025",
+                  style: TextStyle(fontSize: 11, color: Color(0xff434D5E)),
+                ),
+                SizedBox(
+                  width: 115,
+                ),
+                Text(
+                  "04:45 PM",
+                  style: TextStyle(fontSize: 11, color: Color(0xff434D5E)),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 300,
             ),
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-            onTap: (value) {
-              setState(() {
-                index = value;
-              });
-            },
-            backgroundColor: const Color(0xff1C1F5E),
-            items: const [
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.home,
-                    color: Colors.white,
-                  ),
-                  label: "Home"),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.contact_phone,
-                    color: Colors.white,
-                  ),
-                  label: "Contact"),
-              BottomNavigationBarItem(
-                  icon: Icon(
-                    Icons.person,
-                    color: Colors.white,
-                  ),
-                  label: "Profile"),
-            ]),
       ),
     );
   }

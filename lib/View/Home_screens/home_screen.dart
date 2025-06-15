@@ -32,6 +32,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     const CircleAvatar(
                       radius: 32,
+                      backgroundImage:
+                          AssetImage("assets/image/profile picture.webp"),
                     ),
                     const SizedBox(
                       width: 10,
