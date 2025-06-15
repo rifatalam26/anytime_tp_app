@@ -8,6 +8,7 @@ class CommentScreen extends StatefulWidget {
 }
 
 class _CommentScreenState extends State<CommentScreen> {
+  int index = 2;
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -149,10 +150,86 @@ class _CommentScreenState extends State<CommentScreen> {
               ],
             ),
             const SizedBox(
-              height: 300,
+              height: 210,
             ),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 20,
+                ),
+                Text(
+                  "Write comment",
+                  style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff1C1F5E)),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            Container(
+              height: 100,
+              width: 320,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: const Border(
+                    top: BorderSide(color: Color(0xff656565), width: 2),
+                    left: BorderSide(color: Color(0xff656565), width: 2),
+                    right: BorderSide(color: Color(0xff656565), width: 2),
+                    bottom: BorderSide(color: Color(0xff656565), width: 2),
+                  ),
+                  borderRadius: BorderRadius.circular(20)),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
+              height: 50,
+              width: 320,
+              decoration: const BoxDecoration(
+                  color: Color(0xff1C1F5E),
+                  borderRadius: BorderRadius.all(Radius.circular(35))),
+              child: const Center(
+                child: Text(
+                  "Submit",
+                  style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+              ),
+            )
           ],
         ),
+        bottomNavigationBar: BottomNavigationBar(
+            onTap: (value) {
+              setState(() {
+                index = value;
+              });
+            },
+            backgroundColor: const Color(0xff1C1F5E),
+            items: const [
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  ),
+                  label: "Home"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.contact_phone,
+                    color: Colors.white,
+                  ),
+                  label: "Contact"),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.person,
+                    color: Colors.white,
+                  ),
+                  label: "Profile"),
+            ]),
       ),
     );
   }
