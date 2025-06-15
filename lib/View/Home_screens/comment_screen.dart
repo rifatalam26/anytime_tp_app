@@ -129,7 +129,7 @@ class _CommentScreenState extends State<CommentScreen> {
               ],
             ),
             const SizedBox(
-              height: 20,
+              height: 10,
             ),
             const Row(
               children: [
@@ -150,7 +150,7 @@ class _CommentScreenState extends State<CommentScreen> {
               ],
             ),
             const SizedBox(
-              height: 210,
+              height: 220,
             ),
             const Row(
               children: [
