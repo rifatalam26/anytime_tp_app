@@ -21,15 +21,15 @@ class _OfflineScreenState extends State<OfflineScreen> {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(25),
                       bottomRight: Radius.circular(25))),
-              child: Row(
+              child: const Row(
                 children: [
-                  const SizedBox(
+                  SizedBox(
                     width: 20,
                   ),
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 32,
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 10,
                   ),
                   Column(
@@ -38,33 +38,19 @@ class _OfflineScreenState extends State<OfflineScreen> {
                     children: [
                       Row(
                         children: [
-                          const Text(
+                          Text(
                             "Milan Jack",
                             style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white),
                           ),
-                          const SizedBox(
+                          SizedBox(
                             width: 10,
                           ),
-                          Container(
-                            height: 20,
-                            width: 50,
-                            decoration: BoxDecoration(
-                              color: Colors.green,
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: const Center(
-                                child: Text(
-                              "Online",
-                              style:
-                                  TextStyle(fontSize: 12, color: Colors.white),
-                            )),
-                          )
                         ],
                       ),
-                      const Row(
+                      Row(
                         children: [
                           Icon(
                             Icons.location_on,
@@ -79,10 +65,10 @@ class _OfflineScreenState extends State<OfflineScreen> {
                       )
                     ],
                   ),
-                  const SizedBox(
+                  SizedBox(
                     width: 40,
                   ),
-                  const Stack(
+                  Stack(
                     children: [
                       Icon(
                         Icons.notifications,
@@ -151,6 +137,16 @@ class _OfflineScreenState extends State<OfflineScreen> {
                 ],
               ),
             ),
+            const SizedBox(
+              height: 200,
+            ),
+            Container(
+              height: 150,
+              width: 150,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage("assets/image/offline.png"))),
+            )
           ],
         ),
       ),
