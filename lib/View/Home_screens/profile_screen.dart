@@ -33,16 +33,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Row(
                   children: [
                     const SizedBox(
-                      width: 20,
+                      width: 15,
                     ),
                     Container(
                       height: 60,
                       width: 60,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
-                          border: Border.all(color: Colors.white,width: 2),
+                          border: Border.all(color: Colors.white, width: 2),
                           image: const DecorationImage(
-                            fit: BoxFit.cover,
+                              fit: BoxFit.cover,
                               image: AssetImage(
                                   "assets/image/profile picture.webp"))),
                     ),
@@ -86,6 +86,131 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     const SizedBox(
                       width: 40,
                     ),
+                    Container(
+                      height: 40,
+                      width: 40,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(100),
+                        border: Border.all(color: Colors.white, width: 2),
+                      ),
+                      child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            Icons.edit,
+                            color: Colors.white,
+                            size: 20,
+                          )),
+                    ),
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  height: 1.8,
+                  color: Colors.white,
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                const Row(
+                  children: [
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Icon(
+                      Icons.insert_drive_file,
+                      color: Colors.white,
+                      size: 30,
+                    ),
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Text(
+                      "History",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    SizedBox(
+                      width: 150,
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      size: 25,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                Row(
+                  children: [
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      height: 30,
+                      width: 30,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/image/Frame (7).png"))),
+                    ),
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    const Text(
+                      "Notification",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    const SizedBox(
+                      width: 110,
+                    ),
+                    const Icon(
+                      Icons.arrow_forward_ios,
+                      size: 25,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 40,
+                ),
+                 Row(
+                  children: [
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      height: 30,
+                      width: 30,
+                      decoration: const BoxDecoration(
+                          image: DecorationImage(
+                              image: AssetImage("assets/image/Frame (8).png"))),
+                    ),
+                    const SizedBox(
+                      width: 15,
+                    ),
+                    const Text(
+                      "Logout",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    const SizedBox(
+                      width: 150,
+                    ),
+                    const Icon(
+                      Icons.arrow_forward_ios,
+                      size: 25,
+                      color: Colors.white,
+                    )
                   ],
                 ),
               ],
