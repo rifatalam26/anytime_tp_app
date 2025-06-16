@@ -181,6 +181,21 @@ class _CommentScreenState extends State<CommentScreen> {
                     bottom: BorderSide(color: Color(0xff656565), width: 2),
                   ),
                   borderRadius: BorderRadius.circular(20)),
+              child: const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 15),
+                    child: Text(
+                      "Input your message here",
+                      style: TextStyle(fontSize: 14, color: Color(0xff9B9B9B)),
+                    ),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(
               height: 20,
