@@ -37,9 +37,46 @@ class _NotificationScreenState extends State<NotificationScreen> {
               )
             ],
           ),
+          const SizedBox(
+            height: 20,
+          ),
           Container(
             height: 1.8,
             color: const Color(0xffadaaaa),
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 15,
+              ),
+              Text(
+                "Today",
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          Row(
+            children: [
+              const SizedBox(
+                width: 15,
+              ),
+              Container(
+                height: 50,
+                width: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(color: Colors.black, width: 2),
+                    image: const DecorationImage(
+                        image: AssetImage("assets/image/profile pick2.jpeg"))),
+              ),
+
+            ],
           )
         ],
       ),
