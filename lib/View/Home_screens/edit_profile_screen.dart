@@ -94,6 +94,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             padding: const EdgeInsets.only(left: 20, right: 20),
             child: TextFormField(
               decoration: InputDecoration(
+                hintText: "enter your Name",
+                hintStyle: const TextStyle(color: Color(0xff8D8D8D)),
                 enabledBorder: OutlineInputBorder(
                     borderSide:
                         const BorderSide(width: 2, color: Color(0xff8D8D8D)),
@@ -108,6 +110,22 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
           const SizedBox(
             height: 20,
           ),
+          Container(
+            height: 50,
+            width: 320,
+            decoration: const BoxDecoration(
+                color: Color(0xff1C1F5E),
+                borderRadius: BorderRadius.all(Radius.circular(35))),
+            child: const Center(
+              child: Text(
+                "Submit",
+                style: TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
+              ),
+            ),
+          )
         ],
       ),
     );
