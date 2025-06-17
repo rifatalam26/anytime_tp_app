@@ -108,7 +108,73 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 15,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Phone Number",
+                style: TextStyle(fontSize: 15),
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: TextFormField(
+              decoration: InputDecoration(
+                hintText: "Phone",
+                hintStyle: const TextStyle(color: Color(0xff8D8D8D)),
+                enabledBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xff8D8D8D)),
+                    borderRadius: BorderRadius.circular(20)),
+                focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xff8D8D8D)),
+                    borderRadius: BorderRadius.circular(20)),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text(
+                "Address",
+                style: TextStyle(fontSize: 15),
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20, right: 20),
+            child: TextFormField(
+              decoration: InputDecoration(
+                suffixIcon: const Icon(
+                  Icons.location_on,
+                  color: Color(0xff1C1F5E),
+                ),
+                hintText: "Select Your Address",
+                hintStyle: const TextStyle(color: Color(0xff8D8D8D)),
+                enabledBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xff8D8D8D)),
+                    borderRadius: BorderRadius.circular(20)),
+                focusedBorder: OutlineInputBorder(
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xff8D8D8D)),
+                    borderRadius: BorderRadius.circular(20)),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 30,
           ),
           Container(
             height: 50,
