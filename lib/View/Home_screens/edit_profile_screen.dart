@@ -26,7 +26,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     color: Color(0xff000000),
                   )),
               const SizedBox(
-                width: 75,
+                width: 78,
               ),
               const Text(
                 "Edit Profile",
@@ -41,10 +41,11 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             height: 20,
           ),
           Stack(
+            clipBehavior: Clip.none,
             children: [
               Container(
-                height: 60,
-                width: 60,
+                height: 100,
+                width: 100,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(color: Colors.white, width: 2),
@@ -54,10 +55,13 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                             "assets/image/profile picture.webp"))),
               ),
               Positioned(
+                left: 85,
+                top: 65,
                 child: Container(
                   height: 40,
                   width: 40,
                   decoration: BoxDecoration(
+                    color: const Color(0xff1C1F5E),
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(color: Colors.white, width: 2),
                   ),
@@ -69,8 +73,32 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                         size: 20,
                       )),
                 ),
-              ),
+              )
             ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+          const Row(
+            children: [
+              SizedBox(
+                width: 20,
+              ),
+              Text("Name",style: TextStyle(fontSize: 15),),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20,right: 20),
+            child: TextFormField(
+              decoration: InputDecoration(
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20)
+                ),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(20)
+                ),
+              ),
+            ),
           )
         ],
       ),
