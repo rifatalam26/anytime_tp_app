@@ -174,7 +174,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
             ),
           ),
           const SizedBox(
-            height: 30,
+            height: 40,
           ),
           Container(
             height: 50,
