@@ -13,7 +13,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           Row(
@@ -29,7 +29,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 width: 75,
               ),
               const Text(
-                "Notification",
+                "Edit Profile",
                 style: TextStyle(
                     fontSize: 20,
                     color: Color(0xff192A48),
@@ -37,6 +37,41 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               )
             ],
           ),
+          const SizedBox(
+            height: 20,
+          ),
+          Stack(
+            children: [
+              Container(
+                height: 60,
+                width: 60,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(color: Colors.white, width: 2),
+                    image: const DecorationImage(
+                        fit: BoxFit.cover,
+                        image: AssetImage(
+                            "assets/image/profile picture.webp"))),
+              ),
+              Positioned(
+                child: Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                    border: Border.all(color: Colors.white, width: 2),
+                  ),
+                  child: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.edit,
+                        color: Colors.white,
+                        size: 20,
+                      )),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );
