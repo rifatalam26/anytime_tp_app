@@ -51,8 +51,8 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                     border: Border.all(color: Colors.white, width: 2),
                     image: const DecorationImage(
                         fit: BoxFit.cover,
-                        image: AssetImage(
-                            "assets/image/profile picture.webp"))),
+                        image:
+                            AssetImage("assets/image/profile picture.webp"))),
               ),
               Positioned(
                 left: 85,
@@ -84,22 +84,30 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
               SizedBox(
                 width: 20,
               ),
-              Text("Name",style: TextStyle(fontSize: 15),),
+              Text(
+                "Name",
+                style: TextStyle(fontSize: 15),
+              ),
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20,right: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20),
             child: TextFormField(
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20)
-                ),
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xff8D8D8D)),
+                    borderRadius: BorderRadius.circular(20)),
                 focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20)
-                ),
+                    borderSide:
+                        const BorderSide(width: 2, color: Color(0xff8D8D8D)),
+                    borderRadius: BorderRadius.circular(20)),
               ),
             ),
-          )
+          ),
+          const SizedBox(
+            height: 20,
+          ),
         ],
       ),
     );
