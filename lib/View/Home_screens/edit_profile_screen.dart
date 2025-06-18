@@ -184,7 +184,7 @@ class _EditProfileScreenState extends State<EditProfileScreen> {
                 borderRadius: BorderRadius.all(Radius.circular(35))),
             child: const Center(
               child: Text(
-                "Submit",
+                "Save",
                 style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.bold,
