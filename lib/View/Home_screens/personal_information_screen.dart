@@ -9,6 +9,7 @@ class PersonalInformationScreen extends StatefulWidget {
 }
 
 class _PersonalInformationScreenState extends State<PersonalInformationScreen> {
+  int index = 2;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,82 +46,112 @@ class _PersonalInformationScreenState extends State<PersonalInformationScreen> {
             const SizedBox(
               height: 50,
             ),
-            const Column(
-              children: [
-                Row(
-                  children: [
-                    Icon(
-                      Icons.person_outline,
-                      size: 25,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      "Milan Jack",
-                      style: TextStyle(fontSize: 17),
-                    )
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.call,
-                      size: 25,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      "+44 26537 26347",
-                      style: TextStyle(fontSize: 17),
-                    )
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.mail_outline,
-                      size: 25,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      "example@gmail.com",
-                      style: TextStyle(fontSize: 17),
-                    )
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    Icon(
-                      Icons.location_on,
-                      size: 25,
-                    ),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    Text(
-                      "24 NY, Florida, Miami ",
-                      style: TextStyle(fontSize: 17),
-                    )
-                  ],
-                ),
-              ],
-            )
+            const Padding(
+              padding: EdgeInsets.only(left: 40),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.person_outline,
+                        size: 25,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        "Milan Jack",
+                        style: TextStyle(fontSize: 17),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.call,
+                        size: 25,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        "+44 26537 26347",
+                        style: TextStyle(fontSize: 17),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.mail_outline,
+                        size: 25,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        "example@gmail.com",
+                        style: TextStyle(fontSize: 17),
+                      )
+                    ],
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      Icon(
+                        Icons.location_on,
+                        size: 25,
+                      ),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Text(
+                        "24 NY, Florida, Miami ",
+                        style: TextStyle(fontSize: 17),
+                      )
+                    ],
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          onTap: (value) {
+            setState(() {
+              index = value;
+            });
+          },
+          backgroundColor: const Color(0xff1C1F5E),
+          items: const [
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                ),
+                label: "Home"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.contact_phone,
+                  color: Colors.white,
+                ),
+                label: "Contact"),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: Colors.white,
+                ),
+                label: "Profile"),
+          ]),
     );
   }
 }
