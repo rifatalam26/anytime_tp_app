@@ -1,6 +1,7 @@
 
 import 'package:anytime_tp_app/View/Home_screens/comment_screen.dart';
 import 'package:anytime_tp_app/View/Home_screens/edit_profile_screen.dart';
+import 'package:anytime_tp_app/View/Home_screens/log_out_screen.dart';
 import 'package:anytime_tp_app/View/Home_screens/notification_screen.dart';
 import 'package:anytime_tp_app/View/Home_screens/personal_information_screen.dart';
 import 'package:anytime_tp_app/View/Home_screens/profile_screen.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner:false,
-      home:PersonalInformationScreen(),
+      home:ProfileScreen(),
     );
   }
 }

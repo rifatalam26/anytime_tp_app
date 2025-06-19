@@ -133,7 +133,6 @@ class _PersonalInformationScreenState extends State<PersonalInformationScreen> {
           },
           backgroundColor: const Color(0xff1C1F5E),
           items: const [
-
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,

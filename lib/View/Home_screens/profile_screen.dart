@@ -8,6 +8,77 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  _showBottomSheet(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+      ),
+      builder: (BuildContext context) {
+        return Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('Log Out',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                "Are You Sure you Want to log out",
+                style: TextStyle(fontSize: 15, color: Color(0xff909090)),
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 30,
+                    width: 130,
+                    decoration: BoxDecoration(
+                        border: const Border(
+                            top: BorderSide(width: 2, color: Color(0xff7DBABB)),
+                            bottom:
+                                BorderSide(width: 2, color: Color(0xff7DBABB)),
+                            left:
+                                BorderSide(width: 2, color: Color(0xff7DBABB)),
+                            right:
+                                BorderSide(width: 2, color: Color(0xff7DBABB))),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: const Center(
+                        child: Text(
+                      "Cancel",
+                      style: TextStyle(fontSize: 17, color: Color(0xff7DBABB)),
+                    )),
+                  ),
+                  const SizedBox(
+                    width: 30,
+                  ),
+                  Container(
+                    height: 30,
+                    width: 130,
+                    decoration: BoxDecoration(
+                        color: const Color(0xff7DBABB),
+                        borderRadius: BorderRadius.circular(20)),
+                    child: const Center(
+                        child: Text(
+                      "Yes , log out",
+                      style: TextStyle(fontSize: 17, color: Colors.white),
+                    )),
+                  ),
+                ],
+              )
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   int index = 2;
   @override
   Widget build(BuildContext context) {
@@ -181,37 +252,46 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 const SizedBox(
                   height: 40,
                 ),
-                 Row(
-                  children: [
-                    const SizedBox(
-                      width: 20,
-                    ),
-                    Container(
-                      height: 30,
-                      width: 30,
-                      decoration: const BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("assets/image/Frame (8).png"))),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Text(
-                      "Logout",
-                      style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white),
-                    ),
-                    const SizedBox(
-                      width: 150,
-                    ),
-                    const Icon(
-                      Icons.arrow_forward_ios,
-                      size: 25,
-                      color: Colors.white,
-                    )
-                  ],
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => (_showBottomSheet(context))));
+                  },
+                  child: Row(
+                    children: [
+                      const SizedBox(
+                        width: 20,
+                      ),
+                      Container(
+                        height: 30,
+                        width: 30,
+                        decoration: const BoxDecoration(
+                            image: DecorationImage(
+                                image:
+                                    AssetImage("assets/image/Frame (8).png"))),
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Text(
+                        "Logout",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white),
+                      ),
+                      const SizedBox(
+                        width: 150,
+                      ),
+                      const Icon(
+                        Icons.arrow_forward_ios,
+                        size: 25,
+                        color: Colors.white,
+                      )
+                    ],
+                  ),
                 ),
               ],
             ),
