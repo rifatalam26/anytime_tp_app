@@ -66,6 +66,13 @@ class _HistoryScreenState extends State<HistoryScreen> {
               height: 20,
             ),
             Container(
+              height: 2,
+              color: const Color(0xff1C1F5E),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Container(
               height: 490,
               width: 340,
               decoration: BoxDecoration(
