@@ -22,13 +22,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               const Text('Log Out',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  style: TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      color: Color(0xff192A48))),
               const SizedBox(
                 height: 30,
               ),
               const Text(
                 "Are You Sure you Want to log out",
-                style: TextStyle(fontSize: 15, color: Color(0xff909090)),
+                style: TextStyle(fontSize: 18, color: Color(0xff373E4E)),
               ),
               const SizedBox(
                 height: 20,
