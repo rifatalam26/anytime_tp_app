@@ -56,14 +56,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: const Center(
                         child: Text(
                       "Cancel",
-                      style: TextStyle(fontSize: 17, color: Color(0xff143D8C)),
+                      style: TextStyle(
+                          fontSize: 17,
+                          color: Color(0xff143D8C),
+                          fontWeight: FontWeight.bold),
                     )),
                   ),
                   const SizedBox(
                     width: 30,
                   ),
                   Container(
-                    height: 30,
+                    height: 50,
                     width: 130,
                     decoration: BoxDecoration(
                         color: const Color(0xff1C1F5E),
@@ -71,7 +74,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     child: const Center(
                         child: Text(
                       "Yes , log out",
-                      style: TextStyle(fontSize: 17, color: Colors.white),
+                      style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
                     )),
                   ),
                 ],
