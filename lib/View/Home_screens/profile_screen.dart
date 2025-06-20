@@ -66,8 +66,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     height: 30,
                     width: 130,
                     decoration: BoxDecoration(
-                        color: const Color(0xff7DBABB),
-                        borderRadius: BorderRadius.circular(20)),
+                        color: const Color(0xff1C1F5E),
+                        borderRadius: BorderRadius.circular(30)),
                     child: const Center(
                         child: Text(
                       "Yes , log out",
