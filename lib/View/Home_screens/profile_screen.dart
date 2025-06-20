@@ -40,23 +40,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    height: 30,
+                    height: 50,
                     width: 130,
                     decoration: BoxDecoration(
                         border: const Border(
-                            top: BorderSide(width: 2, color: Color(0xff7DBABB)),
+                            top: BorderSide(width: 2, color: Color(0xff024F9E)),
                             bottom:
-                                BorderSide(width: 2, color: Color(0xff7DBABB)),
+                                BorderSide(width: 2, color: Color(0xff024F9E)),
                             left:
-                                BorderSide(width: 2, color: Color(0xff7DBABB)),
+                                BorderSide(width: 2, color: Color(0xff024F9E)),
                             right:
-                                BorderSide(width: 2, color: Color(0xff7DBABB))),
+                                BorderSide(width: 2, color: Color(0xff024F9E))),
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(20)),
+                        borderRadius: BorderRadius.circular(30)),
                     child: const Center(
                         child: Text(
                       "Cancel",
-                      style: TextStyle(fontSize: 17, color: Color(0xff7DBABB)),
+                      style: TextStyle(fontSize: 17, color: Color(0xff143D8C)),
                     )),
                   ),
                   const SizedBox(
