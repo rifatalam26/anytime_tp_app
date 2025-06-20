@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -254,10 +255,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => _showBottomSheet(context)));
+                    Get.to(_showBottomSheet(context));
                   },
                   child: Row(
                     children: [
