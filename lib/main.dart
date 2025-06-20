@@ -1,15 +1,9 @@
 
-import 'package:anytime_tp_app/View/Home_screens/comment_screen.dart';
-import 'package:anytime_tp_app/View/Home_screens/edit_profile_screen.dart';
-import 'package:anytime_tp_app/View/Home_screens/log_out_screen.dart';
-import 'package:anytime_tp_app/View/Home_screens/notification_screen.dart';
-import 'package:anytime_tp_app/View/Home_screens/personal_information_screen.dart';
+
+import 'package:anytime_tp_app/View/Home_screens/history_screen.dart';
 import 'package:anytime_tp_app/View/Home_screens/profile_screen.dart';
-import 'package:anytime_tp_app/View/Signup_screens/verification_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'View/Home_screens/offline_screen.dart';
-import 'View/Signup_screens/congratulation_screen.dart';
 void main(){
   runApp(const MyApp());
 }
@@ -20,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
         debugShowCheckedModeBanner:false,
-      home:ProfileScreen(),
+      home:HistoryScreen(),
     );
   }
 }
