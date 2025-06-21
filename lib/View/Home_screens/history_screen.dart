@@ -73,7 +73,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
               height: 20,
             ),
             Container(
-              height: 490,
+              height: 368,
               width: 340,
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(8)),
@@ -346,53 +346,6 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     ),
                     const SizedBox(
                       height: 20,
-                    ),
-                    Container(
-                      height: 55,
-                      width: 330,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(30),
-                          border: const Border(
-                            top: BorderSide(width: 1, color: Colors.black),
-                            bottom: BorderSide(width: 1, color: Colors.black),
-                            left: BorderSide(width: 1, color: Colors.black),
-                            right: BorderSide(width: 1, color: Colors.black),
-                          )),
-                      child: const Center(
-                        child: Text(
-                          "Decline",
-                          style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xff1C1F5E)),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context)=>const CongratulationScreen()));
-                      },
-                      child: Container(
-                        height: 53,
-                        width: 331,
-                        decoration: BoxDecoration(
-                            color: const Color(0xff1C1F5E),
-                            borderRadius: BorderRadius.circular(30)),
-                        child: const Center(
-                          child: Text(
-                            "Accept",
-                            style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white),
-                          ),
-                        ),
-                      ),
                     ),
                   ],
                 ),
