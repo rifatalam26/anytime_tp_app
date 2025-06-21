@@ -112,7 +112,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                               borderRadius: BorderRadius.circular(25)),
                           child: const Center(
                             child: Text(
-                              "New",
+                              "Done",
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
