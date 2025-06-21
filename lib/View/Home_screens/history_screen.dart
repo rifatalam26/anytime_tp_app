@@ -108,7 +108,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                           height: 30,
                           width: 60,
                           decoration: BoxDecoration(
-                              color: const Color(0xffC4C4C4),
+                              color: const Color(0xff07B939),
                               borderRadius: BorderRadius.circular(25)),
                           child: const Center(
                             child: Text(
@@ -116,7 +116,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                               style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
-                                  color: Color(0xff636363)),
+                                  color: Colors.white),
                             ),
                           ),
                         )
@@ -127,8 +127,15 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     ),
                     Row(
                       children: [
-                        const CircleAvatar(
-                          radius: 32,
+                        Container(
+                          height: 60,
+                          width: 60,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              border: Border.all(color: Colors.white, width: 2),
+                              image: const DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage("assets/image/profile picture.webp"))),
                         ),
                         const SizedBox(
                           width: 10,
@@ -150,7 +157,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                                   height: 32,
                                   width: 161,
                                   decoration: BoxDecoration(
-                                      color: Colors.green,
+                                      color: const Color(0xffC4C4C4),
                                       borderRadius: BorderRadius.circular(30)),
                                   child: const Center(
                                     child: Row(
@@ -180,7 +187,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                                   height: 32,
                                   width: 75,
                                   decoration: BoxDecoration(
-                                      color: Colors.green,
+                                      color: const Color(0xffC4C4C4),
                                       borderRadius: BorderRadius.circular(30)),
                                   child: const Center(
                                     child: Row(
@@ -212,204 +219,90 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-                    InkWell(
-                      onTap: () {
-                        showDialog(
-                            context: context,
-                            builder: (context) {
-                              return AlertDialog(
-                                title: Column(
-                                  children: [
-                                    Row(
-                                      children: [
-                                        Container(
-                                          height: 20,
-                                          width: 20,
-                                          decoration: const BoxDecoration(
-                                              image: DecorationImage(
-                                                  image: AssetImage(
-                                                      "assets/image/Group.png"))),
-                                        ),
-                                        const SizedBox(
-                                          width: 5,
-                                        ),
-                                        const Text(
-                                          "Pickup location",
-                                          style: TextStyle(
-                                              fontSize: 19,
-                                              fontWeight: FontWeight.bold,
-                                              color: Color(0xff1C1F5E)),
-                                        )
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    Container(
-                                      height: 85,
-                                      width: 325,
-                                      decoration: BoxDecoration(
-                                          color: const Color(0xffF0F0F0),
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                          border: Border.all(
-                                              color: const Color(0xffC4C4C4))),
-                                      child: const Column(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.all(10),
-                                            child: Text(
-                                              "8134 Franz Parkways, Suite 805, Lao People,Florida, Miami",
-                                              style: TextStyle(fontSize: 16),
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Row(
-                                      children: [
-                                        Container(
-                                          height: 20,
-                                          width: 20,
-                                          decoration: const BoxDecoration(
-                                              image: DecorationImage(
-                                                  image: AssetImage(
-                                                      "assets/image/Group (1).png"))),
-                                        ),
-                                        const SizedBox(
-                                          width: 5,
-                                        ),
-                                        const Text(
-                                          "Drop location",
-                                          style: TextStyle(
-                                              fontSize: 19,
-                                              fontWeight: FontWeight.bold,
-                                              color: Color(0xff1C1F5E)),
-                                        )
-                                      ],
-                                    ),
-                                    const SizedBox(
-                                      height: 5,
-                                    ),
-                                    Container(
-                                      height: 45,
-                                      width: 325,
-                                      decoration: BoxDecoration(
-                                          color: const Color(0xffF0F0F0),
-                                          borderRadius:
-                                              BorderRadius.circular(8),
-                                          border: Border.all(
-                                              color: const Color(0xffC4C4C4))),
-                                      child: const Column(
-                                        children: [
-                                          Padding(
-                                            padding: EdgeInsets.all(10),
-                                            child: Row(
-                                              children: [
-                                                Text(
-                                                  "Cap Girard, USA",
-                                                  style:
-                                                      TextStyle(fontSize: 16),
-                                                ),
-                                              ],
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ],
+                    Container(
+                      height: 128,
+                      width: 325,
+                      decoration: BoxDecoration(
+                          color: const Color(0xffF0F0F0),
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: const Color(0xffC4C4C4))),
+                      child: Padding(
+                        padding: const EdgeInsets.all(10),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/image/Group.png"))),
                                 ),
-                              );
-                            });
-                      },
-                      child: Container(
-                        height: 128,
-                        width: 325,
-                        decoration: BoxDecoration(
-                            color: const Color(0xffF0F0F0),
-                            borderRadius: BorderRadius.circular(8),
-                            border: Border.all(color: const Color(0xffC4C4C4))),
-                        child: Padding(
-                          padding: const EdgeInsets.all(10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 20,
-                                    width: 20,
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/image/Group.png"))),
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  const Text(
-                                    "Pickup",
-                                    style: TextStyle(
-                                        fontSize: 19,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xff1C1F5E)),
-                                  )
-                                ],
-                              ),
-                              const Row(
-                                children: [
-                                  SizedBox(
-                                    width: 25,
-                                  ),
-                                  Text(
-                                    "8134 Franz Suite 805, Lao Peopl...",
-                                    style: TextStyle(
-                                        fontSize: 15, color: Color(0xff3D3D3D)),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(
-                                height: 10,
-                              ),
-                              Row(
-                                children: [
-                                  Container(
-                                    height: 20,
-                                    width: 20,
-                                    decoration: const BoxDecoration(
-                                        image: DecorationImage(
-                                            image: AssetImage(
-                                                "assets/image/Group (1).png"))),
-                                  ),
-                                  const SizedBox(
-                                    width: 5,
-                                  ),
-                                  const Text(
-                                    "Drop",
-                                    style: TextStyle(
-                                        fontSize: 19,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color(0xff1C1F5E)),
-                                  )
-                                ],
-                              ),
-                              const Row(
-                                children: [
-                                  SizedBox(
-                                    width: 25,
-                                  ),
-                                  Text(
-                                    "Cape Girard, USA",
-                                    style: TextStyle(
-                                        fontSize: 15, color: Color(0xff3D3D3D)),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                const Text(
+                                  "Pickup",
+                                  style: TextStyle(
+                                      fontSize: 19,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xff1C1F5E)),
+                                )
+                              ],
+                            ),
+                            const Row(
+                              children: [
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Text(
+                                  "8134 Franz Suite 805, Lao Peopl...",
+                                  style: TextStyle(
+                                      fontSize: 15, color: Color(0xff3D3D3D)),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 20,
+                                  width: 20,
+                                  decoration: const BoxDecoration(
+                                      image: DecorationImage(
+                                          image: AssetImage(
+                                              "assets/image/Group (1).png"))),
+                                ),
+                                const SizedBox(
+                                  width: 5,
+                                ),
+                                const Text(
+                                  "Drop",
+                                  style: TextStyle(
+                                      fontSize: 19,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xff1C1F5E)),
+                                )
+                              ],
+                            ),
+                            const Row(
+                              children: [
+                                SizedBox(
+                                  width: 25,
+                                ),
+                                Text(
+                                  "Cape Girard, USA",
+                                  style: TextStyle(
+                                      fontSize: 15, color: Color(0xff3D3D3D)),
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
                     ),
