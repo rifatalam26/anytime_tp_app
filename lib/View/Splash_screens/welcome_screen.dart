@@ -1,4 +1,4 @@
-import 'package:anytime_tp_app/View/welcome_screen_2.dart';
+import 'package:anytime_tp_app/View/Splash_screens/welcome_screen_2.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatefulWidget {

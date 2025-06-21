@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:anytime_tp_app/View/welcome_screen.dart';
+import 'package:anytime_tp_app/View/Splash_screens/welcome_screen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
